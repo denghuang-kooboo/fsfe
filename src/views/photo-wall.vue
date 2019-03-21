@@ -25,11 +25,9 @@
 <script>
 import PhotoTile from "components/photo-tile";
 import PhotoModal from "components/photo-modal";
-import ImageLazyLoad from "@/utilities/image-lazy-load";
 import _ from "lodash";
 export default {
   name: "photo-wall",
-  mixins: [ImageLazyLoad],
   components: {
     PhotoTile,
     PhotoModal
