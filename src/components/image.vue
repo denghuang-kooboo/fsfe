@@ -30,6 +30,11 @@ const lazyHandler = img => {
     io.observe(img);
   }
 };
+var resetOriginalSrc = img => {
+  if (img.src !== blankImage) {
+    img.originalSrc = img.src;
+  }
+};
 export default {
   name: "gb-img",
   props: {
@@ -43,7 +48,7 @@ export default {
         lazyHandler(img);
       },
       componentUpdated(img) {
-        lazyHandler(img);
+        resetOriginalSrc(img);
       }
     }
   }
