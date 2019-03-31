@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import GbImg from "components/image";
+import GbImg from "components/elements/image";
 export default {
   name: "photo-tile",
   components: {

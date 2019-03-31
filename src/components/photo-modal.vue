@@ -2,14 +2,18 @@
   <b-modal :active="isImageModalActive"
             @update:active="toggleActive">
     <p class="image is-4by3">
-      <img :src="modalImageUrl">
+      <gb-img :src="modalImageUrl"></gb-img>
     </p>
   </b-modal>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+import GbImg from "components/elements/image";
 export default {
+  components: {
+    GbImg
+  },
   name: 'photo-modal',
   data() {
     return {

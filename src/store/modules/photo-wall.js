@@ -5,7 +5,7 @@ export default {
     modalImageUrl: ''
   },
   getters: {
-    
+
   },
   mutations: {
     setIsImageModalActive(state, val) {
@@ -18,10 +18,10 @@ export default {
   actions: {
     showModal({ commit }, url) {
       commit('setIsImageModalActive', true),
-      commit('setModalImageUrl', url)
+        commit('setModalImageUrl', url)
     },
     closeModal({ commit }) {
-      commit('setIsImageModalActive', false),
+      commit('setIsImageModalActive', false)
       commit('setModalImageUrl', '')
     }
   }
